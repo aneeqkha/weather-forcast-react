@@ -85,7 +85,7 @@ const Submited=async(e)=>{
     if(searchvalue==="City zip"){
         console.log("start")
  
-         apiUrl=`http://api.openweathermap.org/data/2.5/forecast?id=${place}&units=metric&appid=${apiKey}`
+         apiUrl=`http://api.openweathermap.org/data/2.5/forecast?zip=${place}&units=metric&appid=${apiKey}`
      }
        await axios.get(apiUrl)
         .then(response => {
@@ -359,7 +359,7 @@ return<Container>
 <Weathercontainer >
 <Infocity>
     <h1>{infocity.cityname},{infocity.countryname}</h1>
-    <h4>{dayinfo.day}</h4>
+    <h4>{state ?start[selectdata].check:dayinfo.day}</h4>
     <h4>{dayinfo.prediction}</h4>  
 </Infocity>
 
