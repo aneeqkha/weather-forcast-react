@@ -4,7 +4,6 @@ const Container=styled.div`
 
 `
 
-
 const Header=styled.div`
 width: 100%;
 font-size: 28px;
@@ -96,9 +95,7 @@ button{
     float: left;
     font-size: 20px;
 }
-.underlined {
-  text-decoration: underline;
-}
+
 h1{
     float: left;
     font-size: 60px;
@@ -106,6 +103,10 @@ h1{
 p{
     float: Left;
     font-size: 20px;
+}
+
+.active{
+  text-decoration: underline;
 }
 `
 
@@ -119,6 +120,10 @@ padding: 2%;
 const Horizental=styled.div`
   display: flex;
   justify-content: space-between;
+
+  .active{
+    border:1px solid black;
+  }
 `
 const Div=styled.div`
 
@@ -153,7 +158,6 @@ p:not(:first-child) {
 .icon{
     height: 100px;
 }
-
 
 ` 
 
